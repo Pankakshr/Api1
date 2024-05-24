@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/user/create", handler.CreateUser)
+	http.HandleFunc("/user/delete/{id}", handler.DeleteUser)
 	http.ListenAndServe(":8030", nil)
 }
